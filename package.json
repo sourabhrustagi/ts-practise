@@ -1,0 +1,27 @@
+{
+  "name": "ts-practise",
+  "version": "1.0.0",
+  "description": "Comprehensive TypeScript examples covering all major features",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/types.js",
+    "start:array": "node dist/array.js",
+    "start:basics": "node dist/01-basics.js",
+    "start:functions": "node dist/02-functions.js",
+    "start:objects": "node dist/03-objects.js",
+    "start:classes": "node dist/04-classes.js",
+    "start:modules": "node dist/05-modules.js",
+    "start:advanced": "node dist/06-advanced-types.js",
+    "start:narrowing": "node dist/07-narrowing.js",
+    "start:comprehensive": "node dist/08-comprehensive-examples.js",
+    "start:threading": "node dist/09-threading-data-structures.js",
+    "start:complete": "node dist/typescript-complete-guide.js",
+    "run:all": "npm run build && npm run start:basics && npm run start:functions && npm run start:objects && npm run start:classes && npm run start:modules && npm run start:advanced && npm run start:narrowing && npm run start:comprehensive && npm run start:threading && npm run start:complete"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.5.3"
+  },
+  "private": true
+}
