@@ -5,7 +5,11 @@
   "type": "module",
   "scripts": {
     "build": "tsc -p .",
-    "start": "npm run build && node dist/everyday-types.js"
+    "start": "npm run build && node dist/examples/types/everyday-types.js",
+    "start:oop": "npm run build && node dist/examples/oop/oop-example.js",
+    "start:solid": "npm run build && node dist/examples/solid/solid-examples.js",
+    "start:patterns": "npm run build && node dist/examples/patterns/design-patterns.js",
+    "start:all": "npm run start && echo '---' && npm run start:oop && echo '---' && npm run start:solid && echo '---' && npm run start:patterns"
   },
   "devDependencies": {
     "typescript": "^5.5.4"
