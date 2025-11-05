@@ -1,79 +1,153 @@
-# TypeScript Practice Examples
+# TypeScript Practice Project
 
-A comprehensive collection of TypeScript examples covering fundamental concepts, OOP principles, SOLID principles, and design patterns.
+A comprehensive collection of TypeScript examples covering various concepts, patterns, and best practices.
 
-## Project Structure
+## 📁 Project Structure
 
 ```
-src/
-├── examples/
-│   ├── types/           # Basic TypeScript types and features
-│   │   └── everyday-types.ts
-│   ├── oop/             # Object-Oriented Programming examples
-│   │   └── oop-example.ts
-│   ├── solid/           # SOLID principles examples
-│   │   └── solid-examples.ts
-│   └── patterns/        # Design patterns examples
-│       └── design-patterns.ts
+src/examples/
+├── types/          # TypeScript type system features
+│   ├── everyday-types.ts
+│   ├── decorators-examples.ts
+│   ├── iterators-generators-examples.ts
+│   ├── symbols-examples.ts
+│   ├── generics-examples.ts
+│   ├── conditional-types.ts
+│   ├── mapped-types.ts
+│   └── ... (other type-related examples)
+│
+├── modules/        # ES Module system examples
+│   ├── module-examples.ts
+│   ├── module-hello.ts
+│   ├── module-maths.ts
+│   └── ... (module-related examples)
+│
+├── namespaces/     # Namespace examples
+│   ├── namespaces.ts
+│   ├── namespace-example.ts
+│   └── ... (namespace-related examples)
+│
+├── mixins/         # Mixin pattern examples
+│   ├── mixins.ts
+│   └── mixins-practical-examples.ts
+│
+├── oop/            # Object-oriented programming
+│   └── oop-example.ts
+│
+├── patterns/       # Design patterns
+│   └── design-patterns.ts
+│
+└── solid/          # SOLID principles
+    └── solid-examples.ts
 ```
 
-## Available Scripts
+## 🚀 Getting Started
 
-- `npm start` - Run basic TypeScript types examples
-- `npm run start:oop` - Run OOP examples (encapsulation, inheritance, polymorphism, abstraction)
-- `npm run start:solid` - Run SOLID principles examples
-- `npm run start:patterns` - Run design patterns examples
-- `npm run start:all` - Run all examples in sequence
-- `npm run build` - Compile TypeScript to JavaScript
+### Prerequisites
 
-## Examples Covered
+- Node.js (v14 or higher)
+- npm or yarn
 
-### Basic Types (`src/examples/types/`)
-- Primitives, arrays, objects
-- Functions, unions, intersections
-- Type assertions, generics
-- Enums, symbols, bigint
+### Installation
 
-### OOP (`src/examples/oop/`)
-- Encapsulation with private/protected fields
-- Inheritance with abstract classes
-- Polymorphism with interfaces
-- Composition over inheritance
-- Template Method pattern
+```bash
+npm install
+```
 
-### SOLID Principles (`src/examples/solid/`)
-- **S**ingle Responsibility Principle
-- **O**pen/Closed Principle
-- **L**iskov Substitution Principle
-- **I**nterface Segregation Principle
-- **D**ependency Inversion Principle
+### Building
 
-### Design Patterns (`src/examples/patterns/`)
-- Singleton
-- Factory
-- Strategy
-- Observer
-- Adapter
-- Decorator
+```bash
+npm run build
+```
 
-## Getting Started
+### Running Examples
 
-1. Install dependencies:
-   ```bash
-   npm install
-   ```
+Run specific examples:
 
-2. Run any example:
-   ```bash
-   npm run start:oop
-   ```
+```bash
+# Everyday types
+npm start
 
-3. Or run all examples:
-   ```bash
-   npm run start:all
-   ```
+# TypeScript basics
+npm run start:basics
 
-## Requirements
+# OOP examples
+npm run start:oop
 
-- Node.js
-- TypeScript 5.5.4+
+# SOLID principles
+npm run start:solid
+
+# Design patterns
+npm run start:patterns
+
+# Advanced type examples
+npm run start:narrowing
+npm run start:generics
+npm run start:keyof
+npm run start:decorators
+npm run start:iterators
+npm run start:symbols
+
+# Run all examples
+npm run start:all
+```
+
+## 📚 Topics Covered
+
+### Type System
+- **Primitives**: string, number, boolean
+- **Arrays and Tuples**
+- **Union and Intersection Types**
+- **Type Aliases and Interfaces**
+- **Literal Types**
+- **Generics**
+- **Conditional Types**
+- **Mapped Types**
+- **Utility Types**
+- **Type Narrowing**
+- **Type Assertions**
+- **Decorators**
+- **Symbols**
+- **Iterators and Generators**
+
+### Code Organization
+- **ES Modules**: Import/Export patterns
+- **Namespaces**: Namespace declarations and usage
+- **Mixins**: Composition patterns
+
+### Programming Concepts
+- **OOP**: Classes, inheritance, polymorphism
+- **SOLID Principles**: Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, Dependency Inversion
+- **Design Patterns**: Common design patterns in TypeScript
+
+## 🛠️ Configuration
+
+The project uses TypeScript with the following key configurations:
+
+- **Target**: ES2020
+- **Module**: ES2020
+- **Strict Mode**: Enabled
+- **Experimental Decorators**: Enabled
+- **Decorator Metadata**: Enabled
+
+See `tsconfig.json` for full configuration details.
+
+## 📝 Notes
+
+- All examples are self-contained and can be run independently
+- Examples include both correct implementations and common mistakes
+- The codebase follows TypeScript best practices
+- Some examples may have intentional errors for demonstration purposes
+
+## 🤝 Contributing
+
+Feel free to add more examples or improve existing ones. Make sure to:
+
+1. Follow the existing code style
+2. Add appropriate comments
+3. Test your examples
+4. Update this README if adding new categories
+
+## 📄 License
+
+This project is for educational purposes.
