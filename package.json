@@ -6,10 +6,17 @@
   "scripts": {
     "build": "tsc -p .",
     "start": "npm run build && node dist/examples/types/everyday-types.js",
+    "start:basics": "npm run build && node dist/examples/types/ts-basics.js",
     "start:oop": "npm run build && node dist/examples/oop/oop-example.js",
     "start:solid": "npm run build && node dist/examples/solid/solid-examples.js",
     "start:patterns": "npm run build && node dist/examples/patterns/design-patterns.js",
-    "start:all": "npm run start && echo '---' && npm run start:oop && echo '---' && npm run start:solid && echo '---' && npm run start:patterns"
+    "start:narrowing": "npm run build && node dist/examples/types/narrowing-examples.js",
+    "start:generics": "npm run build && node dist/examples/types/generics-examples.js",
+    "start:keyof": "npm run build && node dist/examples/types/keyof-examples.js",
+    "start:decorators": "npm run build && node dist/examples/types/decorators-examples.js",
+    "start:iterators": "npm run build && node dist/examples/types/iterators-generators-examples.js",
+    "start:symbols": "npm run build && node dist/examples/types/symbols-examples.js",
+    "start:all": "npm run start && echo '---' && npm run start:basics && echo '---' && npm run start:oop && echo '---' && npm run start:solid && echo '---' && npm run start:patterns && echo '---' && npm run start:narrowing && echo '---' && npm run start:generics && echo '---' && npm run start:keyof && echo '---' && npm run start:decorators && echo '---' && npm run start:iterators && echo '---' && npm run start:symbols"
   },
   "devDependencies": {
     "typescript": "^5.5.4"
