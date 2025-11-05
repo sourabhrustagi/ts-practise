@@ -14,19 +14,14 @@
 // ============================================================================
 
 // Default export example
+// Note: A file can only have one default export
+// Here's an example of a default function export:
 export default function helloWorld() {
   console.log("Hello, world!");
 }
 
-// You can also export a default class
-export default class Greeting {
-  sayHello(name: string): void {
-    console.log(`Hello, ${name}!`);
-  }
-}
-
-// Note: A file can only have one default export
-// If you want multiple default exports, you need separate files
+// If you want to export a default class, you would do it in a separate file:
+// See module-hello.ts for a default export example
 
 // ============================================================================
 // ES MODULE SYNTAX - NAMED EXPORTS
@@ -234,6 +229,9 @@ export function makeRequest(config: RequestConfig): Promise<Response> {
 }
 
 // Example 4: Default export with named exports
+// Note: Since we already have a default export above, this should be commented out
+// or moved to a separate file. For demonstration, we'll comment it out:
+/*
 export default class Calculator {
   add(a: number, b: number): number {
     return a + b;
@@ -242,7 +240,7 @@ export default class Calculator {
   subtract(a: number, b: number): number {
     return a - b;
   }
-}
+*/
 
 export const CalculatorVersion = "1.0.0";
 export type CalculatorConfig = {
